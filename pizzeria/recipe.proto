@@ -10,6 +10,7 @@ message Instruction
     string name = 1;
     repeated Ingredient ingredients = 2;
     RecipeActions action = 3;
+    int64 duration = 4;
 }
 
 message Recipe
