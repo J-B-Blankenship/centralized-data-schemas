@@ -1,8 +1,16 @@
 syntax = "proto3";
 
+import "pizzeria/common_definitions.proto";
 import "pizzeria/ingredient.proto";
 
 namespace feedme;
+
+message Instruction
+{
+    string name = 1;
+    repeated Ingredient ingredients = 2;
+    RecipeActions action = 3;
+}
 
 message Recipe
 {
