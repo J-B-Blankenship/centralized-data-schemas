@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "pizzeria/ingredient.proto";
+
+namespace feedme;
+
+message Recipe
+{
+    string name = 1;
+    repeated Ingredient ingredients = 2;
+    int32 shelf_life = 3;
+}
