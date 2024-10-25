@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "pizzeria/common_definitions.proto";
+
 namespace feedme;
 
 message Ingredient{
@@ -9,4 +11,5 @@ message Ingredient{
     int64 date_of_purchase = 4;
     float base_cost = 5;
     float marigin = 6;
+    repeated IngredientPrep prep_actions = 7;
 }

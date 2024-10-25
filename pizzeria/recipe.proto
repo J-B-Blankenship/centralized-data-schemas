@@ -12,4 +12,6 @@ message Recipe
     int32 servings = 4;
     float base_cost = 5;
     float marigin = 6;
+    int64 preparation_time = 7;
+    int64 cook_time = 8;
 }
