@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package feedme;
 
-message Ingredient{
+message Ingredient {
     string name = 1;
     int32 quantity = 2;
     int32 shelf_life = 3;
@@ -10,4 +10,11 @@ message Ingredient{
     float base_cost = 5;
     float marigin = 6;
     repeated IngredientPrep prep_actions = 7;
+}
+
+// Define the IngredientPrep message
+message IngredientPrep {
+    string action = 1; // Description of the preparation action
+    int32 duration_minutes = 2; // Duration of the action in minutes
+    string notes = 3; // Additional notes about the preparation
 }
