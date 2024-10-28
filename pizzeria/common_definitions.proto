@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-namespace feedme;
+package feedme;
 
 enum IngredientPrep{
     NO_PREP = 0;
