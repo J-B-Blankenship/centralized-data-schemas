@@ -3,7 +3,7 @@ syntax = "proto3";
 import "pizzeria/common_definitions.proto";
 import "pizzeria/ingredient.proto";
 
-namespace feedme;
+package feedme;
 
 message Instruction
 {
