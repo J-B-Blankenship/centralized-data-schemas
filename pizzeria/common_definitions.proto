@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package feedme;
+
+enum IngredientPrep{
+    NO_PREP = 0;
+    CHOP = 1;
+    DICE = 2;
+    PEEL = 3;
+}
+
+enum RecipeActions{
+    NO_ACTION = 0;
+    BOIL = 1;
+    COMBINE = 2;
+}

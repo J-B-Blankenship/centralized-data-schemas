@@ -4,16 +4,6 @@ import "pizzeria/ingredient.proto";
 
 package feedme;
 
-// Define the RecipeActions enum
-enum RecipeActions {
-    UNKNOWN = 0; 
-    CHOP = 1; 
-    MIX = 2; 
-    BAKE = 3; 
-    BOIL = 4; 
-    FRY = 5; 
-}
-
 message Instruction
 {
     string name = 1;

@@ -30,3 +30,6 @@ This section assumes the `protoc` compiler is available on your OS path. The fol
 - run script: fastapi dev server/main.py
 <!-- not sure if this is correct -->
 - run from top level folder: "uvicorn server.main:app --reload"
+
+## Utilization of the Repo
+This repo does not contain generated files. 
