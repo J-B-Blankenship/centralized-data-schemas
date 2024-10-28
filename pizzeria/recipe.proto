@@ -6,31 +6,29 @@ package feedme;
 
 // Define the RecipeActions enum
 enum RecipeActions {
-    UNKNOWN = 0; // Default value
-    CHOP = 1; // Chop action
-    MIX = 2; // Mix action
-    BAKE = 3; // Bake action
-    BOIL = 4; // Boil action
-    FRY = 5; // Fry action
-    // Add more actions as needed
+    UNKNOWN = 0; 
+    CHOP = 1; 
+    MIX = 2; 
+    BAKE = 3; 
+    BOIL = 4; 
+    FRY = 5; 
 }
 
 message Instruction
 {
-    string name = 1; // Name of the instruction
-    repeated Ingredient ingredients = 2; // Ingredients involved in the instruction
-    RecipeActions action = 3; // Action to be performed
-    int64 duration = 4; // Duration of the instruction in seconds
+    string name = 1;
+    repeated Ingredient ingredients = 2; 
+    RecipeActions action = 3; 
+    int64 duration = 4;
 }
 
 message Recipe
 {
-    string name = 1; // Name of the recipe
-    repeated Ingredient ingredients = 2; // List of ingredients
-    int32 shelf_life = 3; // Shelf life in days
-    int32 servings = 4; // Number of servings
-    float base_cost = 5; // Base cost of the recipe
-    float margin = 6; // Margin percentage, corrected spelling
-    int64 preparation_time = 7; // Preparation time in seconds
-    int64 cook_time = 8; // Cooking time in seconds
+    string name = 1;
+    repeated Ingredient ingredients = 2; 
+    int32 shelf_life = 3; 
+    int32 servings = 4; float base_cost = 5;
+    float margin = 6; 
+    int64 preparation_time = 7; 
+    int64 cook_time = 8; 
 }
