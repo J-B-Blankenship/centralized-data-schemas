@@ -16,3 +16,6 @@ This section assumes the `protoc` compiler is available on your OS path. The fol
 - C#: `protoc --proto_path=. --csharp_out=./generated pizzeria/*.proto`
 - Dart: `protoc --proto_path=. --dart_out=./generated pizzeria/*.proto`
 
+## Utilization of the Repo
+
+This repo does not contain generated files. 

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "pizzeria/common_definitions.proto";
 
-namespace feedme;
+package feedme;
 
 message Ingredient{
     string name = 1;
