@@ -24,7 +24,8 @@ This section assumes the `protoc` compiler is available on your OS path. The fol
 
 - install: python -m venv .venv (more info here: https://fastapi.tiangolo.com/virtual-environments/#create-a-virtual-environment)
 - gitignore the .venv directory: echo "\*" > .venv/.gitignore
-- install a new package: pip install package && pip freeze > requirements.txt
+- install: source .venv/bin/activate
+- install a new package: pip install -r requirements.txt
 - install: pip3 install -r requirements.txt
 - install: pip3 install fastapi[standard]
 - run script: fastapi dev server/main.py
@@ -32,4 +33,4 @@ This section assumes the `protoc` compiler is available on your OS path. The fol
 - run from top level folder: "uvicorn server.main:app --reload"
 
 ## Utilization of the Repo
-This repo does not contain generated files. 
+This repo does not contain generated files.
