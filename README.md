@@ -1,6 +1,7 @@
 # Instructions for Protocol Buffer
 
-This project assumes a version of 3.28.3.
+- This project assumes a version of 3.28.3.
+- Github link: (centralized-data-schemas)[https://github.com/J-B-Blankenship/centralized-data-schemas]
 
 ## Setup
 
@@ -18,4 +19,3 @@ This section assumes the `protoc` compiler is available on your OS path. The fol
 - Python: `protoc --proto_path=. --python_out=./generated pizzeria/*.proto`
 - C#: `protoc --proto_path=. --csharp_out=./generated pizzeria/*.proto`
 - Dart: `protoc --proto_path=. --dart_out=./generated pizzeria/*.proto`
-
