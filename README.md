@@ -22,4 +22,12 @@ This section assumes the `protoc` compiler is available on your OS path. The fol
 
 ## Settingup and Running the fastAPI
 
+- install: python -m venv .venv (more info here: https://fastapi.tiangolo.com/virtual-environments/#create-a-virtual-environment)
+- gitignore the .venv directory: echo "\*" > .venv/.gitignore
+- install: pip3 install -r requirements.txt
+- install: pip3 install fastapi[standard]
+- run script: fastapi dev main.py
+
+<!-- not sure if this is correct -->
+
 - run from top level folder: "uvicorn server.main:app --reload"
