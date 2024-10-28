@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+import "pizzeria/common_definitions.proto";
 import "pizzeria/ingredient.proto";
 
 package feedme;

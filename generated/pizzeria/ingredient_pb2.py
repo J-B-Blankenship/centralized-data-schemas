@@ -22,17 +22,16 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
+from pizzeria import common_definitions_pb2 as pizzeria_dot_common__definitions__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x19pizzeria/ingredient.proto\x12\x06\x66\x65\x65\x64me\"\xac\x01\n\nIngredient\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08quantity\x18\x02 \x01(\x05\x12\x12\n\nshelf_life\x18\x03 \x01(\x05\x12\x18\n\x10\x64\x61te_of_purchase\x18\x04 \x01(\x03\x12\x11\n\tbase_cost\x18\x05 \x01(\x02\x12\x0f\n\x07marigin\x18\x06 \x01(\x02\x12,\n\x0cprep_actions\x18\x07 \x03(\x0b\x32\x16.feedme.IngredientPrep\"I\n\x0eIngredientPrep\x12\x0e\n\x06\x61\x63tion\x18\x01 \x01(\t\x12\x18\n\x10\x64uration_minutes\x18\x02 \x01(\x05\x12\r\n\x05notes\x18\x03 \x01(\tb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x19pizzeria/ingredient.proto\x12\x06\x66\x65\x65\x64me\x1a!pizzeria/common_definitions.proto\"\xab\x01\n\nIngredient\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08quantity\x18\x02 \x01(\x05\x12\x12\n\nshelf_life\x18\x03 \x01(\x05\x12\x18\n\x10\x64\x61te_of_purchase\x18\x04 \x01(\x03\x12\x11\n\tbase_cost\x18\x05 \x01(\x02\x12\x0e\n\x06margin\x18\x06 \x01(\x02\x12,\n\x0cprep_actions\x18\x07 \x03(\x0e\x32\x16.feedme.IngredientPrepb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'pizzeria.ingredient_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_INGREDIENT']._serialized_start=38
-  _globals['_INGREDIENT']._serialized_end=210
-  _globals['_INGREDIENTPREP']._serialized_start=212
-  _globals['_INGREDIENTPREP']._serialized_end=285
+  _globals['_INGREDIENT']._serialized_start=73
+  _globals['_INGREDIENT']._serialized_end=244
 # @@protoc_insertion_point(module_scope)

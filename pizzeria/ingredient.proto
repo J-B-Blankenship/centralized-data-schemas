@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "pizzeria/common_definitions.proto";
+
 package feedme;
 
 message Ingredient {
@@ -11,9 +13,3 @@ message Ingredient {
     float margin = 6; 
     repeated IngredientPrep prep_actions = 7; 
 }
-
-// Define the IngredientPrep message
-message IngredientPrep {
-    string action = 1; 
-    int32 duration_minutes = 2; 
-    string notes = 3; }
