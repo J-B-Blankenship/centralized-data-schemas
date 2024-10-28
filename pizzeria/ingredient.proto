@@ -3,13 +3,13 @@ syntax = "proto3";
 package feedme;
 
 message Ingredient {
-    string name = 1;
-    int32 quantity = 2;
-    int32 shelf_life = 3;
-    int64 date_of_purchase = 4;
-    float base_cost = 5;
-    float marigin = 6;
-    repeated IngredientPrep prep_actions = 7;
+    string name = 1; // Name of the ingredient
+    int32 quantity = 2; // Quantity of the ingredient
+    int32 shelf_life = 3; // Shelf life in days
+    int64 date_of_purchase = 4; // Date of purchase as a timestamp
+    float base_cost = 5; // Base cost of the ingredient
+    float margin = 6; // Margin percentage, corrected spelling
+    repeated IngredientPrep prep_actions = 7; // Preparation actions
 }
 
 // Define the IngredientPrep message
