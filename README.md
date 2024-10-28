@@ -16,9 +16,9 @@
 
 This section assumes the `protoc` compiler is available on your OS path. The following only includes the `pizzeria` directory and assumes no sub-directories.
 
-- Python: `protoc --proto_path=. --python_out=./generated pizzeria/*.proto`
-- C#: `protoc --proto_path=. --csharp_out=./generated pizzeria/*.proto`
-- Dart: `protoc --proto_path=. --dart_out=./generated pizzeria/*.proto`
+- Python: `protoc --proto_path=. --python_out=. pizzeria/*.proto`
+- C#: `protoc --proto_path=. --csharp_out=. pizzeria/*.proto`
+- Dart: `protoc --proto_path=. --dart_out=. pizzeria/*.proto`
 
 ## Settingup and Running the fastAPI
 
@@ -33,4 +33,5 @@ This section assumes the `protoc` compiler is available on your OS path. The fol
 - run from top level folder: "uvicorn server.main:app --reload"
 
 ## Utilization of the Repo
+
 This repo does not contain generated files.

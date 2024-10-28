@@ -1,7 +1,7 @@
 # Purpose: Generate dummy data using faker, structured to match your .proto definitions.
 
 from faker import Faker
-from generated.pizzeria.recipe_pb2 import Recipe
+from pizzeria.recipe_pb2 import Recipe
 from google.protobuf.json_format import MessageToJson
 
 fake = Faker()
